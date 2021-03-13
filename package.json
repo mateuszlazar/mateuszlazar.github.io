@@ -2,7 +2,7 @@
   "name": "mateuszlazar.github.io",
   "private": true,
   "description": "",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
@@ -11,12 +11,10 @@
     "clean": "gatsby clean",
     "start": "npm run develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "test": "echo \"Write tests!\" && exit 1",
-    "deploy": "bash ./scripts/deploy.sh",
-    "version": "npm version minor -m \"upgrade to %s\"",
+    "test": "echo \"Write tests!\"",
     "prerelease": "npm run clean && npm run test && npm run build",
-    "release": "npm run version && npm run deploy",
-    "postrelease": "git push origin --tags && git push"
+    "release": "bash ./scripts/deploy.sh",
+    "postrelease": "npm version minor -m \"upgrade to %s\" && git push origin --tags && git push"
   },
   "dependencies": {
     "gatsby": "^3.0.1",
