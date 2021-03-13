@@ -11,7 +11,8 @@
     "clean": "gatsby clean",
     "start": "npm run develop",
     "deploy": "bash ./scripts/deploy.sh",
-    "release": "npm run clean && npm run build && npm run deploy",
+    "bump": "npm version minor -m 'upgrade to %s' && git push origin --tags",
+    "release": "npm run clean && npm version minor && npm run build && npm run deploy",
     "dev:format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "dev:test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
