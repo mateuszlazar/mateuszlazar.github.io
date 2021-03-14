@@ -16,5 +16,6 @@ module.exports = {
       },
     },
     { resolve: `gatsby-plugin-offline` },  
+    { resolve: `gatsby-plugin-react-helmet` },
   ],
 }

@@ -17,10 +17,10 @@ export const Card: React.FC = () => (
     <Name>{data.name}</Name>
     <Job>{data.job}</Job>
     <Contact>
-      <Link href={data.url.linkedIn}>
+      <Link href={data.url.linkedIn} title={`Go to LinkedIn`}>
         <Icon.LinkedIn />
       </Link>
-      <Link href={data.url.github}>
+      <Link href={data.url.github} title={`Go to Github`}>
         <Icon.Github />
       </Link>
     </Contact>

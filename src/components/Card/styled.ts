@@ -13,14 +13,6 @@ export const CardContainer = styled.div`
   transition: 0.3s all;
 `
 
-export const Avatar = styled.div`
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  border: 2px solid #000;
-  overflow: hidden;
-`
-
 export const Name = styled.div`
   color: #000;
   font-size: 24px;
@@ -44,6 +36,7 @@ export const Contact = styled.div`
 
 export const Link = styled.a.attrs({
   target: "_blank",
+  rel: "noreferrer",
 })`
   display: flex;
   border: 2px solid #000;
