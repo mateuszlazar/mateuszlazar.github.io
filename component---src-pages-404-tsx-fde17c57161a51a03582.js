@@ -1,0 +1,2 @@
+(self.webpackChunkmateuszlazar_github_io=self.webpackChunkmateuszlazar_github_io||[]).push([[218],{938:function(u,e,t){"use strict";t.r(e),t.d(e,{default:function(){return a}});var n=t(7294);function a(){return n.createElement("div",null,"404")}}}]);
+//# sourceMappingURL=component---src-pages-404-tsx-fde17c57161a51a03582.js.map
