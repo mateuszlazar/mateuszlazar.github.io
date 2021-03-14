@@ -1,23 +1,24 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components"
 
 export const GlobalStyle = createGlobalStyle`
   body {
+    background-color: #f9fafa;
     margin: 0;
-    background: linear-gradient(270deg, #9700a7, #ce5d00);
-    background-size: 400% 400%;
-
-    -webkit-animation: Fade 59s ease infinite;
-    animation: Fade 59s ease infinite;
-
-    @-webkit-keyframes Fade {
-        0%{background-position:0% 50%}
-        50%{background-position:100% 50%}
-        100%{background-position:0% 50%}
-    }
-    @keyframes Fade {
-        0%{background-position:0% 50%}
-        50%{background-position:100% 50%}
-        100%{background-position:0% 50%}
-    }
+    font-family: 'Roboto Condensed','Arial',sans-serif;
   }
+
+  html,
+  body,
+  #___gatsby,
+  #gatsby-focus-wrapper {
+    height: 100%;
+  }
+
+  #gatsby-focus-wrapper {
+
+  display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
 `
