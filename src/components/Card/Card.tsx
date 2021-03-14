@@ -1,24 +1,28 @@
 import React from "react"
-import { CardContainer, Avatar, Job, Contact, Link, Name } from "./styled"
-import { Icon } from "../Icon"
-import profile from "./profile"
+import { CardContainer, Job, Contact, Link, Name } from "./styled"
+import { Avatar, Icon } from "../../components"
 
-export const Card: React.FC = () => {
-  const { name, job, avatar, url } = profile
-
-  return (
-    <CardContainer>
-      <Avatar src={avatar} />
-      <Name>{name}</Name>
-      <Job>{job}</Job>
-      <Contact>
-        <Link href={url.linkedIn}>
-          <Icon.LinkedIn />
-        </Link>
-        <Link href={url.github}>
-          <Icon.Github />
-        </Link>
-      </Contact>
-    </CardContainer>
-  )
+const data = {
+  name: "Mateusz Lazar",
+  job: "Web Developer",
+  url: {
+    linkedIn: "https://www.linkedin.com/in/mateusz-lazar/",
+    github: "https://github.com/mateuszlazar",
+  },
 }
+
+export const Card: React.FC = () => (
+  <CardContainer>
+    <Avatar />
+    <Name>{data.name}</Name>
+    <Job>{data.job}</Job>
+    <Contact>
+      <Link href={data.url.linkedIn}>
+        <Icon.LinkedIn />
+      </Link>
+      <Link href={data.url.github}>
+        <Icon.Github />
+      </Link>
+    </Contact>
+  </CardContainer>
+)

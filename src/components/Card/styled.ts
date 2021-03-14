@@ -13,11 +13,12 @@ export const CardContainer = styled.div`
   transition: 0.3s all;
 `
 
-export const Avatar = styled.img`
+export const Avatar = styled.div`
   width: 150px;
   height: 150px;
   border-radius: 50%;
   border: 2px solid #000;
+  overflow: hidden;
 `
 
 export const Name = styled.div`

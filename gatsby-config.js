@@ -1,5 +1,8 @@
 module.exports = {
   plugins: [
+    { resolve: `gatsby-plugin-styled-components`, options: { displayName: false } },
+    { resolve: `gatsby-plugin-image` },  
+    { resolve: `gatsby-plugin-sharp` },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -13,6 +16,5 @@ module.exports = {
       },
     },
     { resolve: `gatsby-plugin-offline` },  
-    { resolve: `gatsby-plugin-styled-components`, options: { displayName: false } }
   ],
 }
