@@ -6,7 +6,7 @@ module.exports = {
         name: `mateuszlazar.github.io`,
         short_name: `mateuszlazar`,
         start_url: `/`,
-        icon: `static/favicon.ico`,
+        icon: `static/favicon.png`,
         background_color: `#000000`,
         theme_color: `#000000`,
         display: `standalone`,
